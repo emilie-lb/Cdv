@@ -1,0 +1,247 @@
+
+/* Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300");
+
+
+/* Général */
+body {
+	font-family: "Raleway";
+	font-size: 14px;
+	background: url("images/photo_on2.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top;
+	margin: 0;
+	height: auto;
+}
+
+.background_shadow {
+	background-color: #E6DACE;
+	background-size: cover;
+	position: fixed;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+	background: linear-gradient(45deg, rgba(96,93,90,0.4), rgba(90,85,81,0.4));
+	opacity: 0.9;
+	z-index: 1;
+}
+
+#container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: auto;
+	width: 100%;
+}
+
+main {
+	border: 2px solid #C6CACD;
+	background-color: rgba(244, 236, 230, 0.8);
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	margin: 6em;
+	padding: 0.2em;
+	z-index: 2;
+	border-radius: 0.5em;
+	box-shadow: 0.5em 0.5em 1em #293133;
+}
+
+a {
+	color: #222; 
+	text-decoration: none;
+}
+
+ul { 
+	list-style: none; 
+	padding: 0;
+	margin: 0.5em 1em; 
+}
+
+h1 {
+	font-size: 22px;
+	padding: 0.2em;		
+}
+
+h2 {
+	font-size: 20px;
+	padding: 0.2em;	
+}
+
+p { 
+	padding: 0.2em;
+	margin: 0.5em 1em; 
+}
+
+
+/* Visit_card section */
+#visit_card {
+	border: 2px solid #C6CACD;
+	background-color: #F4ECE6;
+	opacity: 0.7;
+	border-radius: 0.5em;
+	padding: 0.2em;
+	margin: 0.3em;
+	width: 30em;
+	height: 30em;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	box-shadow: 0.5em 0.5em 1em #293133;
+}
+
+#avatar_image { 
+	border-radius: 50%;
+	height: 13em;
+	padding: 0.7em;
+}
+
+#infos {
+	text-align: center;
+}
+
+#email {
+	font-style: italic;
+	font-size: 13px;
+}
+
+#email:hover {
+	text-decoration: underline;
+	font-size: 14px;
+	color: teal;
+}
+
+#follow_me{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.icons {
+	display: flex;
+	flex-direction: row;
+	width: 50%;
+	justify-content: space-around;
+}
+
+.logo{
+	height: 40px;
+	opacity: 0.5;
+}
+
+.logo:hover{
+	height: 42px;
+	opacity: 0.8;
+	margin: -0.07em;
+}
+
+
+/* Reasons section */
+#reasons {
+	padding: 0.2em;
+	margin: 0.3em;
+	width: 30em;
+	line-height: 2em;
+	background-color: #F4ECE6;
+	opacity: 0.7;
+	border: 2px solid #C6CACD;
+	border-radius: 0.5em;
+	height: 30em;
+	box-shadow: 0.5em 0.5em 1em #293133;
+}
+
+#reasons h2 {
+	text-align: center;
+	padding: 1.5em 0;
+}
+
+#reasons ul {
+	margin-left: 2em;
+}
+
+#reasons li {
+	list-style: square;
+	padding: 1em 1em 0 1em;
+	line-height: 1.5em;
+}
+
+
+/* Footer */
+footer {
+	font-size: 12px;
+	color: grey;
+	/*font-weight: bold;*/
+	font-style: italic;
+	width: 100%;
+	background-color: #F4ECE6;
+	opacity: 0.85;
+	text-align: center;
+	padding: 0.3em;
+	position: absolute;
+	bottom: 0;
+}
+
+
+
+@media screen and (max-width: 1280px)
+{
+	main {
+		flex-direction: column;
+	}
+
+	h2 {
+		font-size: 18px;
+		padding: 0;
+	}
+	#reasons {
+		border-top: 2px solid #C6CACD;
+	}
+	footer{
+		position: relative;
+		bottom: 0;
+	}
+}
+
+@media (max-width: 640px)
+{
+
+	main {
+		flex-direction: column;
+		width: 20em;
+	}
+	h1 {
+		font-size: 20px;
+		padding: 0em;		
+	}
+	h2 {
+		font-size: 16px;
+		padding: 0;
+	}
+	#visit_card {
+		flex-direction: column;
+		align-items: center;
+		width: 18em;
+	}
+	#avatar_image { 
+		height: 11em;
+		padding: 0.7em;
+		margin-top: 1em;
+	}
+	#reasons {
+		border-top: 2px solid #C6CACD;
+		width: 18em;
+		line-height: 1.5em;
+	}
+	#reasons h2 {
+		padding: 0.5em 0.5em;
+	}
+	footer{
+		position: relative;
+		bottom: 0;
+	}
+}
