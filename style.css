@@ -209,7 +209,10 @@ footer {
 
 @media (max-width: 640px)
 {
-
+	#container {
+		height: 100%;
+		width: 100%;
+	}
 	main {
 		flex-direction: column;
 		width: 20em;
