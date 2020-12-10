@@ -188,7 +188,7 @@ footer {
 
 
 
-@media screen (min-width: 639px) and (max-width: 1280px)
+@media screen (max-width: 1280px)
 {
 	main {
 		flex-direction: column;
@@ -207,7 +207,7 @@ footer {
 	}
 }
 
-@media (max-width: 640px)
+@media screen (max-width: 640px)
 {
 	#container {
 		height: 100%;
