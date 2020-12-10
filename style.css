@@ -211,12 +211,12 @@ footer {
 {
 
 	#container {
-		height: auto;
+		height: 100%;
 		width: 100%;
 	}
 	main {
 		flex-direction: column;
-		width: 20em;
+		width: 60%;
 	}
 	h1 {
 		font-size: 20px;
